@@ -1,0 +1,26 @@
+<div class="table-responsive">
+  <table class="table table-bordered" *ngIf="employees && employees.length">
+    <thead>
+      <tr class="bg-primary">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Contact Preference</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{ employee.fullName }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.phone }}</td>
+        <td>{{ employee.contactPreference }}</td>
+        <div class="btn-toolbar">
+          <!-- pour eviter que les deux boutons se collent -->
+          <button class="btn btn-primary" (click)="editButtonClick(employee.id)">Edit</button>
+          <button class="btn btn-danger" (click)="deleteButtonClick(employee.id)">Delete</button>
+        </div>
+      </tr>
+    </tbody>
+  </table>
+</div>

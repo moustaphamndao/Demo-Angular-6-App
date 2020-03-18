@@ -1,0 +1,37 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Mark",
+      "contactPreference": "email",
+      "email": "mark@email.com",
+      "phone": "5641238971",
+      "skills": [
+        {
+          "skillName": "C#",
+          "experienceInYears": 1,
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "Java",
+          "experienceInYears": 2,
+          "proficiency": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fullName": "test1",
+      "contactPreference": "email",
+      "email": "test1@dell.com",
+      "phone": "",
+      "skills": [
+        {
+          "skillName": "F#",
+          "experienceInYears": "12",
+          "proficiency": "advanced"
+        }
+      ]
+    }
+  ]
+}
